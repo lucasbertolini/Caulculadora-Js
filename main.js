@@ -8,6 +8,7 @@ const exibeValor = document.querySelector('#calculadora__principal--mostrador');
 //variavéis para operação
 let valorAtual = 0;
 let valorAntigo = 0;
+let ponto = false
 var somar = false;
 var subtrair = false;
 var multiplicar = false;
@@ -50,6 +51,7 @@ calculadora.addEventListener('click', (evento) =>{
         valorAntigo = 0;
         valorAtual = 0;
         exibeValor.innerHTML = '';
+        ponto = false;
         return;
 
     }else if(valorSelecionado == '='){ //concluir operação da calculadora
@@ -72,7 +74,10 @@ calculadora.addEventListener('click', (evento) =>{
             return
         }
     }else if(valorSelecionado == '.'){ //adiciona o ponto
+        console.log(ponto);
+        if(ponto)return
         exibeValor.innerHTML += '.';
+        ponto = true;
         return
 
     }
