@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: grey;
+}
+body h1 {
+  margin: 10px 0 30px 0;
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+  width: 300px;
+  box-shadow: 0 0 8px 3px orange;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: black;
+}
+.calculadora__principal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.calculadora__pricipal--mostrador {
+  width: 210px;
+  height: 50px;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: white;
+}
+.numero {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: lightgray;
+  box-shadow: 1px 2px 5px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+.numero:hover {
+  background-color: rgb(209, 202, 202);
+  color: white;
+}
+.clear {
+  background-color: orange;
+}
+.clear:hover {
+  background-color: rgb(185, 126, 15);
+}
+footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-weight: 700;
+  font-size: 18px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: lightgrey;
+  transition: color 0.3s;
+}
